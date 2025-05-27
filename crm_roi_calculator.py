@@ -34,6 +34,21 @@ def calculate_roi(num_reps, avg_deal_size, num_leads, conversion_rate, existing_
 # Streamlit app
 st.title("CRM ROI Calculator")
 
+# Introduction section
+st.header("Why ServiceNow CRM?")
+st.write("""
+In today's fast-paced business environment, customer relationship management (CRM) is more critical than ever. ServiceNow CRM offers a comprehensive solution that integrates seamlessly with your existing systems, providing real-time insights and automation that drive efficiency and growth.
+
+### Why Now?
+- **Increased Competition**: Stay ahead of competitors by leveraging advanced CRM capabilities.
+- **Customer Expectations**: Meet and exceed customer expectations with personalized experiences.
+- **Operational Efficiency**: Achieve significant time savings and cost reductions through automation.
+- **Scalability**: Scale your CRM operations effortlessly as your business grows.
+- **Data-Driven Decisions**: Make informed decisions with real-time analytics and reporting.
+
+Adopting ServiceNow CRM now ensures you are equipped to handle the challenges of tomorrow while maximizing your ROI today.
+""")
+
 # User inputs
 num_reps = st.number_input("Number of Sales Reps", min_value=1, value=10)
 avg_deal_size = st.number_input("Average Deal Size (€)", min_value=1, value=50000)
