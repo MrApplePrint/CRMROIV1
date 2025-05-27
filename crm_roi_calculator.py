@@ -51,6 +51,11 @@ st.write(f"Time Savings Value: €{time_savings_value:,.2f}")
 st.write(f"Total Cost: €{total_cost:,.2f}")
 st.write(f"Net ROI: €{net_roi:,.2f}")
 
+# Create a DataFrame for chart
+data = pd.DataFrame({
+    'Metric': ['Increased Revenue', 'Time Savings Value', 'Total Cost', 'Net ROI'],
+    'Value': [increased_revenue, time_savings_value, total_cost, net_roi]
+})
 
 # Create a bar chart using Altair
 chart = alt.Chart(data).mark_bar().encode(
