@@ -1,6 +1,5 @@
 
 import streamlit as st
-import matplotlib.pyplot as plt
 
 # Function to calculate ROI components
 def calculate_roi(num_reps, avg_deal_size, num_deals, cost_per_rep_per_week):
